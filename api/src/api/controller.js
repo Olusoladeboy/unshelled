@@ -12,6 +12,8 @@ export const fetchOrderItemsHandler = async (req, res) => {
 		if (filter.offset || filter.offset >= 0) {
 			skip = Number(filter.offset)
 			delete filter.offset
+		} else {
+			skip = 0
 		}
 		if (!limit) limit = 20
 

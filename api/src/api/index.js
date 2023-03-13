@@ -8,6 +8,6 @@ router.get('/order_items', fetchOrderItemsHandler)
 
 router.put('/account', [authenticate], updateSellerAccountHandler)
 
-router.delete('/order_items/:id', [authenticate], deleteOrderItemsHandler)
+router.delete('/order_items/:id', deleteOrderItemsHandler)
 
 export default router
